@@ -2,42 +2,32 @@ body{
     background: green;
     button{
         border-radius: 8px;
-        margin-left: 50px;
+        margin-left: 70px;
         padding: 3px;
+        background-color: gray;
     }
-    .contenedor-jugadores{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 5px;
+    .contenedor-jugadores, .contenedor-titulares, .contenedor-suplentes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 6%;
         align-items: center;
-    }
-    .contenedor-titulares{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 5px;
-        align-items: center;
-    }
-    .contenedor-suplentes{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 5px;
-        align-items: center;
+        article{
+            margin: 1%;
+        }
     }
     .btn-restablecer{
         border-radius: 8px;
         margin-left: 90px;
         padding: 3px;
+        background-color: gray;
     }
     img{
         border-radius: 50%;
     }
-    h1{
+    h1, h2, h3{
         text-align: center; 
     }
-    h2{
-        text-align: center;
-    }
-    h3{
-        text-align: center;
-    }
+
 }
